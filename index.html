@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Terawatt Industries J-Head Assembly Log</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.3" />
+<meta name="presdate" content="January 2013" />
+<meta name="author" content="Free Beachler" />
+<meta name="company" content="Terawatt Industries" />
+<!-- meta extensions -->
+<meta name="subject" content="Terawatt Industries J-Head Assembly Reference" />
+<meta name="creator" content="Free Beachler" />
+<meta name="contributor" content="Free Beachler" />
+<meta name="publisher" content="Longevity Software d.b.a. Terawatt Industries" />
+<!-- meta temporary -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="outline" />
+<meta name="controlVis" content="hidden" />
+<!-- configuration extensions -->
+<meta name="tranSitions" content="true" />
+<meta name="fadeDuration" content="350" />
+<meta name="incrDuration" content="225" />
+<!-- configuration autoplay extension -->
+<meta name="autoMatic" content="false" />
+<meta name="playLoop" content="false" />
+<meta name="playDelay" content="10" />
+<!-- configuration audio extension -->
+<meta name="audioSupport" content="false" />
+<meta name="audioVolume" content="100" />
+<meta name="audioError" content="false" />
+<!-- configuration audio debug -->
+<meta name="audioDebug" content="false" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/advanced_utf/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/advanced_utf/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/advanced_utf/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/advanced_utf/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.logo {margin: 0.2em 0 0 0.15em; padding: 0;}
+.clock {margin: 0.1em 0.2em; padding: 0; position: absolute; top: 0em; right: 0em;}
+img.bg-lg {display:block;}
+</style>
+<!-- S5 JS -->
+<script src="ui/advanced_utf/slides.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35373460-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header">
+<img class="scale logo" width="96" height="75" src="pix/logo.png" alt="S5" title="S5" />
+<object type="application/x-shockwave-flash" data="obj/flash/relog.swf" width="80" height="80" class="scale clock" classid="CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=6,0,0,0">
+<param name="movie" value="obj/flash/relog.swf" />
+<param name="wmode" value="transparent" />
+<param name="quality" value="high" />
+<param name="menu" value="true" />
+<param name="bgcolor" value="#000000" />
+</object>
+</div>
+<div id="footer">
+<h1>Terawatt Industries J-Head Assembly Reference</h1>
+<h2>Version 1.0</h2>
+</div>
+</div>
+
+<div class="presentation">
+
+<!-- object data="path/file.mp3" archive="volume:50,loop" type="audio/mp3" class="handout" declare="declare" width="0" height="0"></object -->
+
+<div class="slide">
+<h1>Terawatt Industries J-Head Assembly Log</h1>
+<h2>Copyright &copy; 2013 by Terawatt Industries.</h2>
+<img src="pix/tw_logo_0.1_500_462.png" alt="" width="500" height="262" />
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="pix/cclicense_88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Terawatt Industries' Terawatt Industries J-Head Assembly Reference</span> is licensed and distributed by Terawatt Industries, all rights reserved.</p>
+</div>
+
+<div class="slide">
+<h1>Introduction</h1>
+
+<p>This is a build-log we took notes from while assembling J-Head MKV-B hotend.  This is only intended to provide a description of how we build our j-head hotend.  This is not intended as a reference or guide.  We've built and refurbished many j-heads and we publish this document to help customers see how we do it.  You don't have to follow the steps we followed in this document.</p>
+
+<h1>Terms and Conditions</h1>
+
+<p>The <em>Terawatt Industries J-Head Assembly Reference</em> is intended to describe how we build our j-head hotends.  It is not intended as a reference or guide.  If you convey or share this document to/with others you must include these Terms and Conditions, whether in electronic or printed form.</p>
+
+<p>3D Printers are a fire hazard, a pinch hazard, a shock hazard, and a burn hazard.  Keep all flammable items and body parts away from the hotend while operating a 3D printer.  Do not leave a 3D Printer unattended while operating.</p>
+<p>The hotend is the thermoplastic device which melts plastic and is mounted onto the extruder.  The hotend can operate at temperatures near or above 480F (250C).  It is a fire hazard and can cause severe burns and scars.  In many RepRap 3D Printer designs the hotend is exposed (e.g. it has no cover) and flammable materials can fall onto the hotend to cause a fire.</p>
+<p>The temperature of the J-Head hotend is measured by a thermistor which provides information for software-based temperature regulation.  <strong>If the thermistor is disloged from the hotend then the firmware's temperature regulation will fail</strong> and the hotend will overheat.</p>
+<p>If the hotend overheats its PEEK insulation can melt.  This will destroy the component and can <strong>present immediate and significant risk of fire</strong>.</p>
+<p>By proceeding to refer to this document you agree to indemnify Terawatt Industries, legally and wholly, for any failure of your hotend.   You agree to indemnify Terawatt Industries, legally and wholly, for any damage caused by accident or misuse of your j-head hotend and/or 3D Printer; not limited to you, your family, friends, estate, possessions, or their possessions; whether caused by proper or improper assembly, usage of the extruder, j-head hotend, the 3D printer that utilizes such parts, and any equipment connected internally and externally to the 3D printer.</p>
+<p>If you are building or repairing your J-Head MKV-B hotend by following some or all of the steps in this document, then you agree that it's your reponsibility to assemble the part, inspect it regularly and often, and prevent it from failing or causing an accident, fire, or injury.  You agree that it is your responsibility, not the responsibility of Terawatt Industries, to prevent the thermistor from becoming disloged from the MKV-B hotend while printing.</p>
+<p>If you do not agree to these terms and conditions, then do not proceed to use this document.</p>
+
+<div class="handout">
+
+</div>
+
+<div class="notes">
+
+</div>
+
+<!-- object data="path/file.mp3" archive="volume:100" type="audio/mp3" class="handout" declare="declare" width="0" height="0"></object -->
+</div>	<!-- /slide -->
+
+<div class="slide">
+<h3>Build Time</h3>
+<p>It took us about 1 hour to complete the assembly.  It takes a little longer to attach the hotend to the extruder and then attach that to a printer.</p>
+
+<h1>Bill of Materials</h1>
+<ol>
+	<li>1pcs. MKV-B J-Head Hotend w/sealed thermistor</li>
+    <li>1pcs. pre-assembled Greg's Extruder</li>
+    <li>2pcs. AWG 18 stranded copper wire, 750mm length</li>
+    <li>2pcs. AWG 22-28 stranded copper wire, 750mm length</li>
+    <li>2pcs. 1/8" I.D. PTFE tubing, 1/2" length</li>
+    <li>2pcs. teflon tubing for AWG 30 wire</li>
+    <li>2pcs. teflon tubing for AWG 18 wire</li>
+    <li>2pcs. non-insulated butt-splice for 18-24AWG wire</li>
+    <li>Kapton Tape, 50mm (2") width, 300mm (12") length</li>
+</ol>
+
+<h1>Tools Needed</h1>
+<ul>
+<li>Crimping tool<img src="pix/assembly/large/IMG_4509.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>Scissors</li>
+<li>Wire snips<img src="pix/assembly/large/IMG_4446.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>Wire stripper</li>
+<li>Wire-wrap tool (optional)<img src="pix/assembly/large/IMG_4436.png" alt="" width="600" height="450" class="bg-lg" /></li>
+</ul>
+<div class="handout">
+
+</div>
+
+<div class="notes">
+
+</div>
+</div>	<!-- /slide -->
+
+<div class="slide">
+<h1>MKV-B J-Head</h1>
+<h2>Assembly Reference</h2>
+
+<h3>Getting started</h3>
+
+<h4>Prepare for Assembly</h4>
+<ol>
+<li>The J-Head documentation can be found at <a href="http://reprap.org/wiki/J-head">http://reprap.org/wiki/J-head</a>.</li>
+<li>First we cleaned our work area for this assembly.<img src="pix/assembly/large/IMG_4612.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We started by stripping the 18AWG and 22AWG wires, if they weren't already stripped.</li>
+</ol>
+
+</div>	<!-- /slide -->
+
+<div class="slide">
+<h1>MKV-B J-Head</h1>
+<h2>Assembly Reference</h2>
+
+<p>We're completed the J-Head assembly in one 'session' and attached it to the extruder and machine in another.</p>
+
+<h3>Thermistor Wiring</h3>
+
+<ol>
+<li>NOTE:  the Terawatt Industries MKV-B kit comes with 4pcs. 1/8" I.D. teflon tubing and 4pcs. metal wire crimps but we don't use those parts here for the thermistor, so only 2pcs. are needed of each.</li>
+<li>We located the J-head with sealed thermistor.  The thermistor is sealed with a high-temperature silicone sealant.<img src="pix/assembly/large/IMG_4434.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We trimmed both thermistor wires to a little over 1/2".</li>
+<li>We cut two pieces of 30AWG teflon insulation, approx. 1/2" length.  Then we used them to carefully insulate both thermistor leads (wires).  This requires the patience of threading a thin needle.<img src="pix/assembly/large/IMG_4618.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We inserted the 30AWG teflon insulation up to the base of the thermistor, touching the silicone seal.  This helps to prevent a short circuit.</li>
+<li>We located a piece of 750mm 22AWG stranded copper wire to attach to the thermistor lead.  We had already stripped the ends of these wires.</li>
+<li>We wrapped the 22AWG stranded wire around the thermistor lead.<img src="pix/assembly/large/IMG_4622.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We find that a wire-wrap tool is optional but superior for connecting thermistor leads to other wires.  We strongly recommend getting one if you ever plan to work on electronics projects.</li>
+<li>We repeated the above steps for the second thermistor wire.<img src="pix/assembly/large/IMG_4625.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>Finally we verified that the teflon insulation is still attached up to the base of the thermistor, touching the seal.  If the thermistor wires touch it causes a short circuit on the thermistor which the software interperets as having reached maximum-temperature ("maxtemp").  Nothing breaks permanently but the nozzle won't heat when this happens.</li>
+</ol>
+
+<h3>Secure Thermistor Wiring</h3>
+
+<ol>
+<li>We routed the thermistor wires on either side of the corner of the j-head nozzle.  This establishes wire separation and reduce the chance of a short-circuit.</li>
+<li>We cut a piece of 50mm (2") kapton tape 150mm-200mm (6-8") length.  We cut the tape in half lengthwise so it's 25mm (1") wide.<img src="pix/assembly/large/IMG_4469.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We took a 1" strip of kapton tape you just cut and start wrapping it around the (black/tan) PEEK barrell of the j-head hotend.  We started near one corner of the nozzle where the thermistor wires are routed.<img src="pix/assembly/large/IMG_4628.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We finished wrapping the kapton tape around both thermistor wires to secure them to the PEEK barrell.  We wrapped the tape as close to the brass nozzle as possible.<img src="pix/assembly/large/IMG_4636.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>Now, provide strain relief:
+	<ol>
+    	<li>We routed the 22AWG wires sticking out from the kapton tape near the top of the j-head, back towards the brass nozzle.</li>
+        <li>We wrapped another layer of 25mm x 150-200mm kapton tape over the thermistor wires in the same position as the first layer.  Leave the wires sticking out of the tape towards the bottom.<img src="pix/assembly/large/IMG_4638.png" alt="" width="600" height="450" class="bg-lg" /></li>
+        <li>We routed the 22AWG wires sticking out from the kapton tape near the bottom of the j-head, back up towards the top of the hotend.</li>
+        <li>We wrapped another layer of kapton tape over at the same position as the previous layers.<img src="pix/assembly/large/IMG_4640.png" alt="" width="600" height="450" class="bg-lg" /></li>
+	</ol>
+</li>
+<li>We wrapped another 2 layers of kapton tape around the thermistor wires.<img src="pix/assembly/large/IMG_4644.png" alt="" width="600" height="450" class="bg-lg" /></li>
+</ol>
+
+<h3>Heater-resistor wiring</h3>
+<ol>
+<li>We located the heater-resistor and trim the leads to slightly about 15mm (~1/2").  NOTE:  we found the leads in these photos to be ~5mm longer than desired.<img src="pix/assembly/large/IMG_4648.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We located the 12mm (1/2") PTFE tubing and non-insulated butt-splice connectors.  In most cases the 18-24 AWG metal splices will fit inside the PTFE tubing but this may take a little elbow grease.  In situations where we haven't been able to fit the splice inside the PTFE we've chosen to ditch the PTFE because kapton is attached later, i.e. the splice is more important.<img src="pix/assembly/large/IMG_4651.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We insulated the heater-resistor leads with 18AWG teflon tubing.  The tubing should be installed up to the base of the heater-resistor.  Leave 7mm-10mm of the resistor lead exposed on the other side, for the splice connection.<img src="pix/assembly/large/IMG_4652.png" alt="" width="600" height="450" class="bg-lg" /><img src="pix/assembly/large/IMG_4653.png" alt="" width="600" height="450" class="bg-lg" /><img src="pix/assembly/large/IMG_4656.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We attached and a butt-splice with (or without) PTFE insulation to one (1) side of the resistor.  We crimped one side of the splice (so we can attach the 18AWG wire into the other side) onto the resistor wire.  It took some force to crimp the splice, especially with PTFE around it.  A crimp tool like ours generates cracking noises and a pop when the PTFE+splice is crimped around the wire.<img src="pix/assembly/large/IMG_4661.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We inserted 18AWG stranded copper wire, 750mm+ length, into the other side of the butt-splice we and finished crimping.<img src="pix/assembly/large/IMG_4664.png" alt="" width="600" height="450" class="bg-lg" /><img src="pix/assembly/large/IMG_4666.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We were careful not to crimp both sides of the heater-resistor yet!</li>
+<li>We pulled on the wires we just crimped with a couple/few pounds of force using our hands.  We did this to verify the crimps and wiring didn't fall off, come apart, or become disconnected.</li>
+<li>We inserted the heater resistor through the resistor hole in the J-head.<img src="pix/assembly/large/IMG_4668.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We crimped another PTFE+splice to the resistor wire we just threaded through the j-head.</li>
+<li>We attached and crimped the other side of the heater-resistor to 18 AWG stranded copper wire, 750mm+ length, using a second butt-splice w/PTFE insulation.<img src="pix/assembly/large/IMG_4672.png" alt="" width="600" height="450" class="bg-lg" /></li>
+</ol>
+
+<h3>Secure Resistor Wiring</h3>
+
+<ol>
+<li>First we routed the resistor wires.  In this assembly we tried a few different ways of bending the resistor wires.<img src="pix/assembly/large/IMG_4675.png" alt="" width="600" height="450" /><img src="pix/assembly/large/IMG_4681.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We settled on a bend that keeps the PTFE tubing maximized distance from the groove at the top of the j-head.  If the PTFE goes above the groove then attachment to the extruder is often problematic.<img src="pix/assembly/large/IMG_4681.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>With the proper routing established, we applied more kapton tape as we did with the thermistor.<img src="pix/assembly/large/IMG_4683.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>4-6 layers of kapton tape around the resistor wires seems to work OK for us.<img src="pix/assembly/large/IMG_4689.png" alt="" width="600" height="450" class="bg-lg" /></li>
+</ol>
+
+<h3>Attach J-Head to Greg's Extruder</h3>
+
+<p>We've been using M2.5x25mm socket-cap screws to attach the extruder.  There are other ways to do this but be careful to watch for clearance of the extruder gears.</p>
+
+<ol>
+<li>We de-burred the j-head mounting hole on the bottom of the extruder.  Sometimes we'll find extra pieces of plastic in the j-head mounting hole which prevents the j-head from mounting flush.</li>
+<li>We de-burred the 2x M2.5 holes on the bottom of Greg's extruder used to mount the j-head.</li>
+<li>We inserted 2x M2.5 screws into the holes in the bottom of Greg's extruder.  We partially threaded them, not so far that they were visible from the bottom of the extruder.<img src="pix/assembly/large/IMG_4693.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We inserted the j-head into the bottom of Greg's extruder.<img src="pix/assembly/large/IMG_4698.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We observed the small opening in the extruder visible from the side/top.  We use this to verify that the J-head is inserted completely.<img src="pix/assembly/large/IMG_4699.png" alt="" width="600" height="450" class="bg-lg" /></li>
+<li>We tightened the M2.5 screws.  We tightened them evenly, alternating 5-10 turns at a time.  When we don't tighten them evenly mis-alignment of the screws or hotend can occur.<img src="pix/assembly/large/IMG_4703.png" alt="" width="600" height="450" class="bg-lg" /></li>
+</ol>
+
+<h3>Hoorah!</h3>
+<p><img src="pix/assembly/large/IMG_4705.png" alt="" width="600" height="450" class="bg-lg" />Our hotend and extruder took about an hour to assemble and were ready to be attached to a printer and commissioned for use.  Before we attached this to our machine we pulled on the wires a few more times with our hands using moderate force.  We weren't trying to break anything, but trying to verify that moderate forces wouldn't dislodge the thermistor or any wiring.  Since nothing came loose we knew it was ready to use.  If we get this far along and find something in the hotend assembly is loose, sub-standard, or improper, we'll back up and re-build it.  This is perhaps the most important component of a 3D printer.  From our experience, quality assembly of the hotend pays dividends in improved performance and uptime for the printer.</p>
+
+</div>	<!-- /slide -->
+
+</div>	<!-- /presentation -->
+
+</body>
+</html>
